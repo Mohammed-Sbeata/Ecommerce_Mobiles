@@ -1,0 +1,22 @@
+{
+  "name": "ecommerce-team8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G13/Ecommerce-team8.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G13/Ecommerce-team8/issues"
+  },
+  "homepage": "https://github.com/GSG-G13/Ecommerce-team8#readme",
+  "dependencies": {
+    "jest": "^29.5.0"
+  }
+}

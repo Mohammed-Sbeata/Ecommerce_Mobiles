@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="seller.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>seller page</title>
+  </head>
+
+  <body>
+    <section>
+      <div class="container">
+        <div class="add-product-div">
+          <h2 class="seller-page-title">Add new Product</h2>
+          <form id="create-product-form">
+            <div class="name-img-inps">
+              <input
+                name="imageUrl"
+                id="url-input"
+                type="text"
+                placeholder="add an img with url"
+              />
+              <input
+                name="productTitle"
+                id="name-input"
+                type="text"
+                placeholder="write product name"
+              />
+            </div>
+            <div class="discriptioninps">
+              <input
+                name="productDescription"
+                id="desc-input"
+                type="text"
+                placeholder="write description about the product"
+              />
+            </div>
+            <div class="price-catagory">
+              <input
+                name="formPrice"
+                id="price-input"
+                type="text"
+                placeholder="write the price of the product"
+              />
+              
+              <select name="cat" id="cat-input" class="cata">
+                <option value="iphone">IPhone</option>
+                <option value="samsung">Samsung</option>
+                <option value="huawei">Huawei</option>
+                <option value="xiaomi">Xiaomi</option>
+                
+              </select>
+            </div>
+            <div class="add-update-btns">
+              <button id="add-button" type="submit">add</button>
+            </div>
+          </form>
+          <div class="search-product-div">
+            <input class="search-product" type="text" placeholder="search by name">
+          </div>
+        </div>
+
+        <div class="show-product-div">
+          <h2 class="my-products">All Product</h2>
+          <p class="product-number">23</p>
+          <div class="whole-product-div">
+            <!-- <div class="card-product">
+            <div class="img-box">
+              <img src="" alt="">
+            </div>
+            <div class="content-card">
+              <h2>product name</h2>
+              <p>prduct description in deatails</p>
+              <div class="price-catagory-show">
+                <p>price</p>
+                <p>catagory</p>
+              </div>
+            </div>
+            <div class="delete-edit-div">
+              <span class="delete-item"><i  class="fa-solid fa-trash"></i></span>
+              <span class="edit-item"><i class="fa-sharp fa-solid fa-pen"></i></span>
+            </.div>
+          </div> -->
+          </div>
+        </div>
+        <div class="popup-edit-div hidden">
+          <form id="edit-form" class="edit-form">
+            <i id="close-edit-div" class="fa-solid fa-xmark"></i>
+            <input
+              name="edit-image"
+              class="url"
+              type="text"
+              placeholder="url"
+            />
+            <input
+              name="edit-name"
+              class="name"
+              type="text"
+              placeholder="name"
+            />
+            <input
+              name="edit-desc"
+              class="desc"
+              type="text"
+              placeholder="desc"
+            />
+            <input
+              name="edit-price"
+              class="price"
+              type="text"
+              placeholder="price"
+            />
+            <input
+              name="edit-cata"
+              class="cata"
+              type="text"
+              placeholder="cata"
+            />
+            <button class="update" type="submit">update</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="./helper.js"></script>
+    <script src="seller.js"></script>
+  </body>
+</html>

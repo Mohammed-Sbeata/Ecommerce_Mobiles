@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+:root {
+  --text-color: #fdfdfd;
+  --bg-color: #22313f;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+body {
+  color: var(--bg-color);
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--bg-color);
+  z-index: 100;
+}
+.container {
+  max-width: 1068px;
+  margin: auto;
+  width: 100%;
+}
+section {
+  padding: 4rem 0 3rem;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.total-products-num {
+  color: var(--text-color);
+}
+.logo {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  font-weight: 400;
+}
+#cart-icon {
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.search-bar {
+  background: #fff;
+  height: 30px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.search-bar:hover .input {
+  width: 400px;
+}
+.search-bar .input {
+  border: none;
+  outline: none;
+  width: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.8s;
+}
+
+.search-bar .btn .fas {
+  color: var(--bg-color);
+}
+.nav button,
+.select button {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 30px;
+  margin-left: 1rem;
+  cursor: pointer;
+  color: var(--bg-color);
+}
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.shop {
+  margin-top: 2rem;
+}
+.shop-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 300px));
+  gap: 1.5rem;
+}
+.product-card {
+  position: relative;
+}
+.product-card:hover {
+  padding: 10px;
+  border: 2px solid var(--bg-color);
+  transition: 0.4s;
+}
+.product-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+.product-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.price {
+  font-weight: 500;
+}
+.add-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  padding: 10px;
+  cursor: pointer;
+}
+.add-cart:hover {
+  background-color: #8dc6ff;
+}
+footer {
+  padding: 5rem 15rem;
+  background-color: var(--bg-color);
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+footer div a,
+p {
+  color: var(--text-color);
+  font-size: 1rem;
+}
+.select {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+section.mySwiper {
+  margin-top: 50px;
+}
+@media screen and (max-width: 600px) {
+  .search-bar:hover .input {
+    width: 100px;
+  }
+  .nav {
+    padding: 20px 10px;
+  }
+  .shop {
+    padding: 3rem;
+  }
+  footer {
+    padding: 1rem 1rem;
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <!--swiper js-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/b30aca8cb1.css"
+      crossorigin="anonymous"
+    />
+    <title>MOBILE SHOP</title>
+  </head>
+  <body>
+    <!--nav-->
+    <header>
+      <nav class="nav container">
+        <a href="#" class="logo"
+          ><i class="fa-solid fa-mobile"></i> mobileshope</a
+        >
+        <div class="search-bar">
+          <form id="search-form">
+            <input
+              type="text"
+              name="search"
+              placeholder="Search..."
+              class="input"
+            />
+            <a href="#" class="btn">
+              <i class="fas fa-search"></i>
+            </a>
+          </form>
+        </div>
+        <div>
+          <a href="cart/cart.html">
+            <i class="fa-solid fa-cart-shopping" id="cart-icon"></i
+            ><span class="total-products-num">0</span></a
+          >
+          <a href="/seller/seller.html"><button>seller</button></a>
+        </div>
+      </nav>
+    </header>
+    <section class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="imges/1.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="imges/2.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="imges/3.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="imges/4.jpg" alt="" /></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </section>
+    <section class="shop container">
+      <h2 class="section-title">Prooducts</h2>
+      <div class="select">
+        <select class="filter-by-category">
+          <option>Select Category:</option>
+          <option>iphone</option>
+          <option>huawei</option>
+          <option>xiaomi</option>
+          <option>samsung</option>
+        </select>
+        <button class="show-all">Show All</button>
+        <select class="filter-by-price">
+          <option>Select Price:</option>
+          <option>100</option>
+          <option>500</option>
+          <option>1000</option>
+          <option>1500</option>
+        </select>
+      </div>
+      <div class="shop-content">
+        <div class="product-card">
+          <img src="imges/2955_6.jpg" alt="" class="product-img" />
+          <h2 class="product-title">NOKIA 105 Dual SIM (Dark Blue)</h2>
+          <p class="product-description">hsjajhhadvajdgqiwdg</p>
+          <span class="price">$2000</span>
+          <i class="fa-solid fa-cart-plus add-cart"></i>
+        </div>
+        <div class="product-card">
+          <img src="imges/2955_6.jpg" alt="" class="product-img" />
+          <h2 class="product-title">NOKIA 105 Dual SIM (Dark Blue)</h2>
+          <p class="product-description"></p>
+          <span class="price">2000</span>
+          <i class="fa-solid fa-cart-plus add-cart"></i>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <a href="cart/cart.html">Your cart</a>
+        <a href="seller/seller.html">Add products</a>
+        <p>contact us : <span>+970736365262</span></p>
+      </div>
+      <a href="#" class="logo"
+        ><i class="fa-solid fa-mobile"></i> mobileshope</a
+      >
+    </footer>
+    <!--swiper js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!--font awesome-->
+    <script
+      src="https://kit.fontawesome.com/b30aca8cb1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="seller/helper.js"></script>
+    <script src="script/main.js"></script>
+  </body>
+</html>
