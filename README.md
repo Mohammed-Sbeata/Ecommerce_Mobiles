@@ -44,7 +44,6 @@ npm install
 
 ```
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/ecommerce-mobiles
 ```
 
 4. **Run the server:**
